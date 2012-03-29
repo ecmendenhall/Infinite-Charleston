@@ -2,7 +2,7 @@ html {
 	background-color: black;
 }
 
-.timer_box { 
+.timer_box div { 
 	position: absolute;
 	z-index: 1;
 	background-color: red;
@@ -12,10 +12,16 @@ html {
 	margin-top: 15px;
 	font-family: "Futura", "Helvetica";
 	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	vertical-align: center;		
+	border-bottom-right-radius: 5px;	
 }
 
+.timer_box p {
+	opacity: 1;
+}		
+
+.timer_box a {
+	vertical-align: middle;
+}
 
 .videoplayer { 
 	position: absolute;
