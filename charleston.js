@@ -6,9 +6,9 @@ function get_seconds() {
 	var now = new Date();
 	var time_now = now.getTime();
 	var time_diff = time_now - start_time;
-	var seconds = time_diff/1000
-	var timer_string = Math.round(seconds)
-	document.getElementById('timer').innerHTML = timer_string;
+	var seconds = time_diff/1000;
+	var timer_string = Math.round(seconds);
+	document.getElementById("timer").innerHTML = timer_string;
 	window.setTimeout("get_seconds();", 1000);
 }
 
