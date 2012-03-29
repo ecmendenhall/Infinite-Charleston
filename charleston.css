@@ -2,7 +2,7 @@ html {
 	background-color: black;
 }
 
-.timer_box div { 
+.timer_box { 
 	position: absolute;
 	z-index: 1;
 	background-color: red;
@@ -13,14 +13,6 @@ html {
 	font-family: "Futura", "Helvetica";
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;	
-}
-
-.timer_box p {
-	opacity: 1;
-}		
-
-.timer_box a {
-	vertical-align: middle;
 }
 
 .videoplayer { 
@@ -38,4 +30,8 @@ html {
 	font-style: bold;
 	font-size: 120%;
 	vertical-align: center;
+}
+
+#tweetbutton {
+	vertical-align: middle;
 }
