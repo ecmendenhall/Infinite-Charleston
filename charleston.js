@@ -16,13 +16,20 @@ function random_int(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function add_source(element, src, type) {
+	var source = document.createElement("source");
+	source.src = src;
+	source.type = type;
+	element.appendChild(source);
+}
+
 
 function main() {
 	var video_no = random_int(1,7);
 	var video_string_mpeg = "http://ecmendenhall.github.com/Infinite-Charleston/media/Trudy" + video_no + ".mp4";
 	var video_string_webm = "http://ecmendenhall.github.com/Infinite-Charleston/media/Trudy" + video_no + ".webm";
-	var sources = document.querySelectorAll(".videoplayer source");
-	sources.item(0).src = video_string_mpeg;
-	sources.item(1).src = video_string_webm;
+	var videoplayer = document.querySelector(".videoplayer");
+	add_source(videoplayer, video_string_mpeg, "video/mp4");
+	add_source(videoplayer, video_string_mpeg, "video/webm");
 	get_seconds();
 }
