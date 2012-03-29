@@ -29,12 +29,8 @@ function main() {
 	var video_string_mpeg = "http://ecmendenhall.github.com/Infinite-Charleston/media/Trudy" + video_no + ".mp4";
 	var video_string_webm = "http://ecmendenhall.github.com/Infinite-Charleston/media/Trudy" + video_no + ".webm";
 	var videoplayer = document.querySelector(".videoplayer");
-	if (navigator.appCodeName === "Mozilla") {
-		add_source(videoplayer, video_string_webm, "video/webm");
-	}
-	else {
-		add_source(videoplayer, video_string_mpeg, "video/mp4");
-		add_source(videoplayer, video_string_mpeg, "video/webm");
-	}
-	get_seconds();
+	add_source(videoplayer, video_string_mpeg, "video/mp4");
+	add_source(videoplayer, video_string_webm, "video/webm");
+	videoplayer.addEventListener("onplay", get_seconds(), false);
+		
 }
