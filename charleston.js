@@ -19,13 +19,8 @@ function random_int(min, max) {
 
 function main() {
 	var video_no = random_int(1,7);
-<<<<<<< HEAD
 	var video_string_mpeg = "http://ecmendenhall.github.com/Infinite-Charleston/media/Trudy" + video_no + ".mp4";
 	var video_string_webm = "http://ecmendenhall.github.com/Infinite-Charleston/media/Trudy" + video_no + ".webm";
-=======
-	var video_string_mpeg = "Trudy" + video_no + ".mp4";
-	var video_string_webm = "Trudy" + video_no + ".webm";
->>>>>>> master
 	var sources = document.querySelectorAll(".videoplayer source");
 	sources.item(0).src = video_string_mpeg;
 	sources.item(1).src = video_string_webm;
