@@ -6,6 +6,7 @@ html {
 	position: absolute;
 	z-index: 1;
 	background-color: red;
+	opacity: .7;
 	padding: 3px 15px; 
 	margin-left: -5px;
 	margin-top: 15px;
