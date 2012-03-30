@@ -11,7 +11,8 @@ function get_seconds() {
 	document.getElementById("timer").innerHTML = timer_string;
 	window.setTimeout("get_seconds();", 1000);
 	var tweet_string = "A thing like that! I watched Pete & Trudy dance for " + timer_string + " seconds.";
-	document.getElementById("tweetbutton").setAttribute("data-text", tweet_string);
+	var tweet = document.getElementById("tweetbutton");
+	tweet.setAttribute("data-text", tweet_string);
 	
 }
 
