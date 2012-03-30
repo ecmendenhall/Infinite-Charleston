@@ -10,6 +10,9 @@ function get_seconds() {
 	var timer_string = Math.round(seconds);
 	document.getElementById("timer").innerHTML = timer_string;
 	window.setTimeout("get_seconds();", 1000);
+	var tweet_string = "A thing like that! I watched Pete & Trudy dance for " + timer_string + " seconds.";
+	document.getElementById("tweetbutton").setAttribute("data-text", tweet_string);
+	
 }
 
 function random_int(min, max) {
@@ -31,6 +34,6 @@ function main() {
 	var videoplayer = document.querySelector(".videoplayer");
 	add_source(videoplayer, video_string_mpeg, "video/mp4");
 	add_source(videoplayer, video_string_webm, "video/webm");
-	videoplayer.addEventListener("onplay", get_seconds(), false);
+	videoplayer.addEventListener("onplay", get_seconds(), false);  
 		
 }
