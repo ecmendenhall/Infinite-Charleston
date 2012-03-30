@@ -10,9 +10,7 @@ function get_seconds() {
 	var timer_string = Math.round(seconds);
 	document.getElementById("timer").innerHTML = timer_string;
 	window.setTimeout("get_seconds();", 1000);
-	var tweet_string = "A thing like that! I watched Pete & Trudy dance for " + timer_string + " seconds.";
-	document.querySelector("iframe").setAttribute("src", tweet_string);
-	
+		
 }
 
 
