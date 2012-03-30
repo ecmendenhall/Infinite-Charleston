@@ -24,6 +24,40 @@ html {
 	height: 100%;
 }
 
+.madeby {
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+}
+
+.madeby p {
+	color: white;
+	font-family: "Helvetica";
+	opacity: .5;
+	font-size: 65%;
+	text-align: right;
+}
+
+.madeby a {
+	color: white;
+	text-decoration: none;
+}
+
+.madeby a:visited {
+	color: white;
+}
+
+.madeby p:hover {
+	color: white;
+	opacity: .9;
+}
+
+.madeby a:hover {
+	color: white;
+	opacity: .9;
+	text-decoration: underline;
+}
+
 #timer {
 	display: inline;
 	color: white;
