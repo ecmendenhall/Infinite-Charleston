@@ -79,10 +79,12 @@ html {
   font-size:0;
   background: url("http://ecmendenhall.github.com/Infinite-Charleston/media/tweetbutton.png") no-repeat 0 0;
 }
+
 #custom-tweet-button a:hover
 {
   background-position: 0 -21px;
 }
+
 #custom-tweet-button a:active
 {
   background-position: 0 -42px;

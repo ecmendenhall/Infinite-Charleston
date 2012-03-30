@@ -13,7 +13,7 @@ function get_seconds() {
 	var url = document.URL;
 	var text = "I watched Pete & Trudy dance for " + timer_string + " seconds. A thing like that!";
 	var related = "ecmendenhall";
-	var tweet_href = "https://twitter.com/share" + "?" + encodeURIComponent("url=") + encodeURIComponent(url) + "&" + encodeURIComponent("text=") +encodeURIComponent(text) + "&" + encodeURIComponent("related=") + encodeURIComponent(related);
+	var tweet_href = "https://twitter.com/share" + "?" + encodeURIComponent("url") +"=" + encodeURIComponent(url) + "&" + encodeURIComponent("text") +"=" +encodeURIComponent(text) + "&" + encodeURIComponent("related") + "=" + encodeURIComponent(related);
 	document.querySelector("#custom-tweet-button").setAttribute("href", tweet_href);
 		
 }
