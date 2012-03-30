@@ -2,7 +2,7 @@ html {
 	background-color: black;
 }
 
-.timer_box { 
+.overlay_box { 
 	position: absolute;
 	z-index: 1;
 	background-color: red;
@@ -12,7 +12,8 @@ html {
 	margin-top: 15px;
 	font-family: "Futura", "Helvetica";
 	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;	
+	border-bottom-right-radius: 5px;
+	vertical-align: middle;	
 }
 
 .videoplayer { 
@@ -63,29 +64,30 @@ html {
 	color: white;
 	font-style: bold;
 	font-size: 120%;
-	vertical-align: center;
 }
 
-#tweetbutton {
-	vertical-align: middle;
-}
 
-#custom-tweet-button a
+#custom-tweet-button
 {
-  display: block;
+  display: inline;
   width: 55px;
   height: 20px;
   color: rgba(0,0,0,0);
   font-size:0;
+  padding: 10px 30px;
+  margin: 10px 0px;
   background: url("http://ecmendenhall.github.com/Infinite-Charleston/media/tweetbutton.png") no-repeat 0 0;
+  vertical-align: middle;
+
+ 
 }
 
-#custom-tweet-button a:hover
+#custom-tweet-button:hover
 {
   background-position: 0 -21px;
 }
 
-#custom-tweet-button a:active
+#custom-tweet-button:active
 {
   background-position: 0 -42px;
 }
