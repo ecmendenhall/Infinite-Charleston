@@ -11,14 +11,10 @@ function get_seconds() {
 	document.getElementById("timer").innerHTML = timer_string;
 	window.setTimeout("get_seconds();", 1000);
 	var tweet_string = "A thing like that! I watched Pete & Trudy dance for " + timer_string + " seconds.";
-	updateTweetButtonText(tweet_string);
+	document.getElementById("tweet-button").setAttribute("data-text", tweet_string);
 	
 }
 
-function updateTweetButtonText(message) {
-  var tweetButton = document.getElementById("tweet-button");
-  tweetButton.src = tweetButton.src.replace(/&text=[^&]+/, "&text=" + encodeURIComponent(message) );
-}
 
 function random_int(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
